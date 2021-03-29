@@ -1,0 +1,82 @@
+# Copyright (C) 2021 pg-plugin-skeleton
+# This file is distributed under the same license as the pg-plugin-skeleton package.
+msgid ""
+msgstr ""
+"Project-Id-Version: pg-plugin-skeleton\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/pg-plugin-skeleton-admin.php:11
+msgid "Plugin Skeleton"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:24
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:52
+msgid "Save Changes"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:69
+msgid "Email Settings"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:83
+msgid "The address emails will be sent from"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:89
+msgid "The name of the sender"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:95
+msgid "Your mail sever"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:101
+msgid "Port used by your mail server"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:111
+msgid "The encryption method used by your mail server"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:117
+msgid "Username to login to your mail server"
+msgstr ""
+
+#: src/pg-plugin-skeleton-admin.php:123
+msgid "Password to login to your mail server"
+msgstr ""
+
+#: src/includes/page-skeleton.php:8, src/includes/post-skeleton.php:11
+msgid "Skeleton"
+msgstr ""
+
+#: src/includes/post-skeleton.php:10
+msgid "Skeletons"
+msgstr ""
+
+#: src/includes/rest-api.php:77, src/includes/rest-api.php:138
+msgid "sorry not found"
+msgstr ""
+
+#: src/includes/rest-api.php:148
+msgid "failed to delete"
+msgstr ""
+
+#: src/includes/rest-api.php:164
+msgid "failed to send message"
+msgstr ""
+
+#: src/includes/templates/email-options.php:10
+msgid "Save Settings"
+msgstr ""
