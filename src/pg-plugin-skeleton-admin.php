@@ -166,6 +166,11 @@ function _pgps_create_option($title, $name, $group, $page, $attributes=array(), 
       'sanitize_callback' => 'sanitize_text_field',
       'render_callback' => 'gen_render_input' ),
 
+		'textarea' => array(
+      'setting_type' => 'string',
+      'sanitize_callback' => 'sanitize_textarea_field',
+      'render_callback' => 'gen_render_textarea_input' ),
+
     'password' => array(
       'setting_type' => 'string',
       'sanitize_callback' => 'sanitize_text_field',
@@ -189,7 +194,7 @@ function _pgps_create_option($title, $name, $group, $page, $attributes=array(), 
     'radio' => array(
       'setting_type' => 'string',
       'sanitize_callback' => 'sanitize_text_field',
-      'render_callback' => 'gen_render_radio_input' ),
+      'render_callback' => 'gen_render_radio' ),
   );
 
   $setting_type = $type_lookup[$attributes['type']]['setting_type'];
@@ -230,7 +235,33 @@ function gen_render_input($attributes, $description='') {
 }
 
 
-function gen_render_radio_input($attributes, $description='') {
+function gen_render_textarea($attributes, $description='') {
+
+  return function() use ( $attributes, $description ) {
+		$content = $attributes["value"];
+		unset( $attributes["type"] );
+		unset( $attributes["value"] );
+    ob_start();
+    ?>
+    <textarea <?php 
+      foreach ($attributes as $attr => $val) { 
+        echo $attr . '="' . esc_attr( $val ) . '"';
+      } ?>
+    ><?php echo $content;?></textarea>
+    <?php
+    if ( $description ) {
+      ?>
+      <p class="description"><?php echo $description; ?></p>
+      <?php
+    }
+    echo ob_get_clean();
+  };
+
+}
+
+
+
+function gen_render_radio($attributes, $description='') {
 
   return function() use ( $attributes, $description ) {
     ob_start();
